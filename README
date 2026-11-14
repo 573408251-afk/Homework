@@ -1,0 +1,73 @@
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework
+$ git init
+Initialized empty Git repository in C:/Users/Светлана/Desktop/Homework/.git/
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git add -A
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git commit -m "Initial commit"
+[main (root-commit) 6884007] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git checkout -b fix
+Switched to a new branch 'fix'
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (fix)
+$ git add -A
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (fix)
+$ git commit -m "change README"
+On branch fix
+nothing to commit, working tree clean
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (fix)
+$ git checkout main
+Switched to branch 'main'
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git remote add origin git@github.com:573408251-afk/Homework.git
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git branch -M main
+
+Светлана@Svetlana09 UCRT64 ~/Desktop/Homework (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 526 bytes | 263.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:573408251-afk/Homework.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
